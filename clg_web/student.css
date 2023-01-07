@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif   ;
+}
+#h1-student{
+    font-size: 40px;
+}
+#line{
+    width: 200px;
+    height: 5px;
+    background-color: #0131b3;
+    margin-left: 5px;
+    margin-top: -35px;
+    border-radius: 5px;
+}
+
+#batch-list{
+    width: 600px;
+    display:flex;
+    gap: 140px;
+    margin-left: 9.3%;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+#batch-line{
+    margin-bottom: 15px;
+    width: 500px;
+    margin-left: 130px;
+    height: 2px;
+    background-color: #333;
+}
+
+#current-list{
+    width: 600px;
+    display:flex;
+    gap: 30px 80px;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+#alumini-list{
+    width: 600px;
+    display:flex;
+    gap: 30px 80px;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+#list-2020{
+    color: #FDCB6E;
+}
+#list{
+    width: 80px;
+    background-color: #EE6E6D;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+#list:hover{
+    background-color: rgb(179, 144, 144);
+}
+#list > a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+
+

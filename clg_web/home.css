@@ -6,38 +6,46 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url(./image/1.jpg);
+
     background-size: cover;
     background-position: center center;
     
 }
-
+#home-1{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
 #logo-tap{
+    width: 100%;
+    height: 20%;
     display: flex;
     z-index: 99;
-    background-color: white;   
+    background-color: #ffffff;  
+    position: relative; 
 }
 
 #akcas-logo{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 120px;
-    width: 600px;
-    
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 20%;
+    width: 100%;
+    height: 80%;
 }
 
 #icon{
-    font-size: 25px;
-    margin-top: 35px;
+    font-size: 150%;
+    margin-top: 1.5%;
 }
 
 #logo-mail{
-    margin-bottom: 30px;
-    width: 250px;
+    margin-bottom: 10%;
+    width: 200%;
 }
 
 #logo-mail p{
@@ -49,34 +57,38 @@ body {
 #logo-phone p{
     font-size: 10px;
     display: inline;
-    margin-top: 10px;
     margin-left: 10px;
     
 }
 #logo-line{
-    height: 110px;
+    height: 100px;
     width: 5px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 10px;
     margin-left: 200px;
     background-color: #007ACC;
+    margin-left: 30%;
 }
 #main-menu{
     padding: 10px ;
-    width: 100%;
+    width: 100vw;
     display: flex;
     list-style: none;
     text-align: center;
-    justify-content: center;
     background-color: #004DA8;
     z-index: 1;
-       
+    position: relative;
+    justify-content: center;
 }
 #main-menu > li{
-    padding: 9px 10px;
+    padding: 7px 7px;
     width: 150px;
-    margin-left: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: inline-block;
+}
+#main-menu > li:hover{
+    background-color: #007ACC;
 }
 #main-menu > li > a{
     width: 100%;
@@ -102,7 +114,7 @@ body {
     position: absolute;
     width: 150px;
     left: 0px;
-    top: 125%;
+    top: 100%;
     text-align: left;
     display: none;
 }
@@ -112,28 +124,37 @@ body {
     padding: 10px 0;
     margin: 0;
     text-align: center;
-    border-top: 2px solid #000000;
+    border-top: 1px solid #000000;
 
 }
 
-.sub-menu li:nth-child(1){
-    border: none;
-}
-#main-menu > li:hover .sub-menu,
-#main-menu > li:focus-within .sub-menu{
-    display: block;
+
+#main-menu > li:hover .sub-menu
+{
+    display:block;
     
 }
-#main-menu li:nth-child(3):hover .sub-menu{
-    display: block;
-}
-#main-menu li:nth-child(4):hover .sub-menu{
-    display: block;
+#main-menu > li:hover .sub-menu li:hover{
+    background-color: #007ACC;
 }
 
-/* #akcas-background{
+#back-video{
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+#klu{
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 100px;
+   
+}
+
+
+#overlay{
     width: 100%;
-    height: 477.4px;
-    
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.7));
+    position: absolute;
 }
- */

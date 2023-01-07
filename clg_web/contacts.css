@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#all-cont{
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+}
+#container{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color:#87adca;
+    overflow: hidden;
+}
+#address{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    
+}
+#address > p{
+    margin-top: 20px;
+}
+#map-address{
+    display: flex;
+    margin-top: 10px;
+}
+#cont-line{
+    width: 100%;
+    margin-top: 50px;
+}
+h2{
+    padding-left: 10px;
+    color: darkblue;
+    height: 10px;
+    margin-top: 10px;
+}
+#map{
+    width: 50%;
+    height: 100%;
+    background-color:#87adca;
+    margin-right: 80px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#span{
+    color:darkblue;
+    padding: 15px;
+
+}
+#place{
+    color:darkblue;
+    padding: 40px;
+}
+#mail{
+    
+    padding: 10px;
+    
+}
+#phone{
+    padding: 10px;
+    color:darkblue;
+}
+a{
+    color:darkblue;
+    text-decoration: none;
+
+}
+iframe{
+    width: 448px;
+    height: 450px;
+    margin: 0px;
+}
+
+
+#address > p {
+    padding-left: 10px;
+    color:darkgreen;
+}
