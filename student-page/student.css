@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+#student-section {
+    background-color: white;
+}
+
+#current-years {
+    width: 100%;
+    height: 35%;
+}
+
+#alumini {
+    width: 100%;
+    height: 65%;
+}
+
+#current-student{
+    width: 100%;
+    height: 18%;
+}
+
+#alumini-student{
+    width: 100%;
+    height: 10%;
+}
+
+/* Main heading(current students, alumini students) */
+.student {
+    position: relative;
+}
+
+.student::after {
+    content: '';
+    width: 120px;
+    height: 5px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #00b894;
+}
+
+/* div under the student class above the alumini (or) alumini students heading */
+#current {
+    width: 100%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text above the year buttons */
+.batch-list{
+    width: 50%;
+    height: 20%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+.batch-list:before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: #a29bfe;
+    bottom: -10px;
+    left: 0;
+    border-radius: 20px;
+}
+
+/* div for year buttons */
+#current-list{
+    width: 50%;
+    height: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* div buttons */
+.list{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #FF7675;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.list:hover{
+    background-color: #636e72;
+}
+
+.list > a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* div inside alumini students for the buttons and (other batches) text */
+#batches {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text above the buttons in alumini div */
+#other-batch-list {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+#other-batch-list::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #a29bfe;
+}
+
+/* buttons in alumini div */
+#alumini-list{
+    width: 70%;
+    height: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0 40px;
+    padding: 10px;
+}
+
+.my-year {
+    background-color: #fdcb6e;
+    position: relative;
+}
+
+.crown {
+    position: absolute;
+    top: -15px;
+    right: -19px;
+    font-size: 30px;
+    color: #fd9644;
+    transform: rotate(45deg);
+}
+
+/* style for the students name list */
+
+.name-list {
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    display: none;
+}
+
+.student-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+
+.table > #table-head {
+    width: 100%;
+    height: 7%;
+    top: 0;
+    z-index: 2;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 2px 0 #333;
+}
+
+.table > #table-body {
+    width: 100%;
+    height: 93%;
+}
+
+.box {
+    width: 100%;
+    min-height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.box:nth-child(even) {
+    background-color: rgba(223, 230, 233, 0.4);
+}
+
+.no {
+    width: 50%;
+    text-align: center;
+}
+
+.name {
+    width: 50%;
+    text-align: left;
+}
+
+.head-name {
+    width: 50%;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.table-heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* extra sections tab in batch 2021 & 2022 */
+.year-2021,
+.year-2022 {
+    position: relative;
+}
+.sections {
+    width: 130%;
+    height: 90px;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 120%;
+    left: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease;
+    z-index: 4;
+}
+
+.sections > h2 {
+    width: 100%;
+    height: 30%;
+    line-height: 27px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#sec-option {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec {
+    width: 40%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #FF7675;
+    border-radius: 10px;
+}
+
+.sec:hover {
+    background-color: teal;
+}
+
+.year-2021:hover .sections,
+.year-2021:focus-within .sections,
+.year-2022:hover .sections,
+.year-2022:focus-within .sections {
+    opacity: 1;
+    pointer-events: all;
+}
