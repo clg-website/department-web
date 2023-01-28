@@ -155,7 +155,7 @@ section {
 
 /* buttons in alumini div */
 #alumini-list{
-    width: 70%;
+    width: 90%;
     height: 90%;
     display:flex;
     flex-wrap: wrap;
@@ -185,6 +185,7 @@ section {
     position: absolute;
     top: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    z-index: 99;
     display: none;
 }
 
@@ -196,7 +197,7 @@ section {
 }
 
 .table {
-    width: 40%;
+    min-width: 46%;
     height: 100%;
     background-color: white;
     text-align: center;
@@ -243,19 +244,28 @@ section {
 }
 
 .no {
-    width: 50%;
+    width: 20%;
+    text-align: center;
+}
+
+.reg {
+    width: 20%;
     text-align: center;
 }
 
 .name {
-    width: 50%;
+    width: 40%;
     text-align: left;
 }
 
 .head-name {
-    width: 50%;
+    width: 40%;
     text-align: center;
     padding-right: 50px;
+}
+
+.registor-no {
+    width: 20%;
 }
 
 .table-heading {
@@ -323,4 +333,8 @@ section {
 .year-2022:focus-within .sections {
     opacity: 1;
     pointer-events: all;
+}
+
+#check {
+    display: block;
 }
