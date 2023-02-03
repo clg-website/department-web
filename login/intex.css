@@ -1,0 +1,144 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image:  linear-gradient(to left, #8B82D5,#B4B0EB );;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+}
+
+#login{
+    width: 300px;
+    height: 500px;
+    background-image:  linear-gradient(to right, #5E55A4,#7A75B7 );
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px -3px 30px;
+    position: relative;
+    margin-right: 20%;
+    overflow:hidden;
+}
+
+#white{
+    background-color: white;
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    rotate: 50deg;
+    margin-left: -220px;
+    border-radius: 60px;
+    margin-top: -40px;
+    z-index: 5;
+}
+
+#blue-1{
+    background-color: #7D7CB8;
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    border-radius: 50px;
+    rotate: 50deg;
+    margin-top: 380px;
+    margin-left: -30px;
+    z-index: 3;
+}
+
+#blue-2{
+    background-color: #5F57A3;
+    width: 150px;
+    height: 400px;
+    position: absolute;
+    border-radius: 30px;
+    rotate: 50deg;
+    margin-top: 10px;
+    margin-left: 150px;
+    z-index: 3;
+}
+
+#blue-3{
+    background-color: #6D63AC;
+    width: 150px;
+    height: 250px;
+    position: absolute;
+    border-radius: 30px;
+    rotate: 50deg;
+    margin-top: -160px;
+    margin-left: 180px;
+    z-index: 3;
+}
+
+#login-form{
+    z-index: 6;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 30px;
+    
+}
+
+#email,
+#password{
+    border-bottom: 0.1px solid #B4B0EB;
+    width: 150px;
+}
+
+#password{
+    margin-top: 40px;
+}
+
+i{
+    font-size: small;
+    color: #7D7CB8;
+}
+
+input{
+    border-style:none ;
+    width: 120px;
+    height: 25px;
+    font-size: 11px;
+    color: #7D7CB8;
+    background-color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+}
+
+#submit{
+    margin-top: 40px;
+    background-color: #ffffff;
+    width: 190px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px;
+}
+
+#submit > input{
+    height: 40px;
+    width: 150px;
+    margin-left: 17px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#submit > i{
+    font-weight: bold;
+}
+
+#log-icon{
+    position: absolute;
+    z-index: 6;
+    margin-top: 370px;
+    margin-left: 200px;
+    color: #ffffff;
+}
+
+#icon {
+    margin-top: -20px;
+    
+}
+
+#icon > i{
+    color: #ffffff;
+    margin-left: 4px;
+}
