@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.leave-form{
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;   
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#form-logo{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+}
+
+#form-logo img{
+    width: 100%;
+    height: auto;
+}
+
+#head-leave{
+    width: 100%;
+}
+.head-leave{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#form-input{
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+
+}
+#input-name{
+    width: 100%;
+    margin-top: 50px;
+}
+
+input{
+    font-size: 40px;
+}
+
+label{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#name
+{
+    width: 600px;
+    height: 40px;
+    margin-left: 20px;
+}
+#no-day-class,
+#reg-roll-no{
+    display: flex;
+}
+#regno,
+#rollno,
+#class{
+    width: 275px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+#input-regno > label,
+#input-no-day > label,
+#input-end-date > label{
+    margin-left: 20px;
+}
+
+#class{
+    margin-left: 43px;
+}
+
+#no-day{
+    width: 155px;
+    height: 40px;
+}
+
+#on-day-text{
+    font-size: 20px;
+}
+
+#on-day{
+    margin-left: 40px;
+}
+
+#input-date{
+    display: flex;
+}
+
+#start-date,
+#end-date{
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+#submit-reset > input{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(250, 62, 62);
+    font-weight: bold;
+    color: antiquewhite;
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:auto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+    
+}
+#home-1{
+    width: 100%;
+   
+}
+
+#logo-tap{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    z-index: 99;
+    background-color: #ffffff;  
+    position: relative; 
+}
+
+#akcas-logo{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 20%;
+    width: 100%;
+    height: 80%;
+}
+
+#icon{
+    font-size: 150%;
+    margin-top: 1.5%;
+}
+
+#logo-mail{
+    margin-bottom: 10%;
+    width: 200%;
+}
+
+#logo-mail p{
+    font-size: 10px;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#logo-phone p{
+    font-size: 10px;
+    display: inline;
+    margin-left: 10px;
+    
+}
+#logo-line{
+    height: 100px;
+    width: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 200px;
+    background-color: #007ACC;
+    margin-left: 30%;
+}
+#main-menu{
+    padding: 10px ;
+    width: 100vw;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    background-color: #004DA8;
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+}
+#main-menu > li{
+    padding: 7px 7px;
+    width: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+}
+#main-menu > li:hover{
+    background-color: #007ACC;
+}
+#main-menu > li > a{
+    width: 100%;
+}
+#main-menu > li a:hover{
+    color: rgb(185, 182, 182);
+}
+#main-menu > li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.people{
+    position: relative;
+    
+}
+
+
+.sub-menu{
+    background-color: #004DA8;
+    list-style: none;
+    position: absolute;
+    width: 150px;
+    left: 0px;
+    top: 100%;
+    text-align: left;
+    display: none;
+}
+
+.sub-menu li,
+.sub-document{
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid #000000;
+
+}
+
+.sub-document{
+    margin-left: 151px;
+    margin-top: -47.5px;
+    list-style: none; 
+    position: absolute;
+    display: none;
+}
+
+.sub-document > li{
+    text-decoration: none;
+    background-color: #004DA8;
+}
+
+#main-menu > li:hover .sub-menu,
+#document:hover .sub-document
+{
+    display:block;
+    
+}
+#main-menu > li:hover .sub-menu li:hover{
+    background-color: #007ACC;
+}
+
+#back-video{
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+#klu{
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    top: 100px;
+   
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.7));
+    position: absolute;
+}
+
+#home-img{
+    position: absolute;
+    
+}
+
+#com-sci{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 40px;
+}
+
+#com-sci >h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}

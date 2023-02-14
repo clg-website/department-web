@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <script src="https://kit.fontawesome.com/a5c8072d69.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./course.css">
+    <link rel="stylesheet" href="./inex.css">
+</head>
+<body>
+  <!--   <section id="home-1">
+        <div id="logo-tap">
+            <div id="logo">
+                <img id="akcas-logo" src="./image/AKCAS_logo.jpg" alt="img">
+            </div><hr id="logo-line">
+            <div id="icon">
+                <i id="logo-mail" class="fa-solid fa-envelope"><p>E-mail : mareesw757@gmail.com</p></i><br>
+                <i id="logo-phone" class="fa-solid fa-phone-volume"><p>Phone : 9600262531</p></i>
+            </div>
+        </div>
+        <div>
+            <div id="menu-bar">
+                <ul id="main-menu">
+                    <li><a href="./intex.html">Home</a></li>
+                    <li class="people"><a href="#">People  <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="#">Staff</a></li>
+                        <li><a href="#">student</a></li>
+                    </ul>
+                    </li>
+                    <li class="people"><a href="#">Academics  <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="./course.html">Course & Syllabus</a></li>
+                            <li id="document"><a href="#">Documents</a>
+                                <ul class="sub-document">
+                                    <li><a href="./leave-form.html">Leave Form</a></li>
+                                    <li><a href="#">Time Table</a>
+                                </ul>
+                            </li>
+                            <li><a href="#">Gallary</a></li>
+                            <li><a href="#">Exams</a></li>
+                            <li><a href="#">Activities</a></li>
+                        </ul>
+                    </li>
+                    <li class="people"><a href="#">Achivements  <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Rank holder</a></li>
+                            <li><a href="#">Sports</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Admission</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section>   
+    <div>
+        <h1 id="program">PROGRAMS</h1><hr id="program-line">
+        <div>
+            <table id="program-table" >
+                <tr>
+                    <th>Name of Program</th>
+                    <th>Specialisation</th>
+                    <th>Strength</th>
+                </tr>
+                <tr>
+                    <td>B.Sc</td>
+                    <td>Computer Science</td>
+                    <td>96</td>
+                </tr>
+                <tr>
+                    <td>M.Sc</td>
+                    <td>Computer Science</td>
+                    <td>48</td>
+                </tr>
+            </table>
+        </div>
+        <div id="program-syllabus">
+            <div id="bsc-program">
+                <div id="bsc-prog-head">
+                    <hr><h1>B.Sc Program</h1>
+                </div>
+                <div id="bsc-details">
+                    <h3>Computer Science</h3>
+                    <p>Program : B.Sc</p>
+                    <p>Branch: Computer Science</p>
+                    <p>Annual Intake: 96</p>
+                    <p>Duration : 3 Years</p>
+                    <p>Affiliation : Madurai Kamaraj University(MKU)</p>
+                    <p>Scheme year: 1999</p>
+                    <p>Syllabus :  <a onclick="ugOn(),pgOff()" href="#">view</a></p>
+                </div>
+            </div>
+            <div id="msc-program">
+                <div id="msc-prog-head">
+                    <hr><h1>M.Sc Program</h1>
+                </div>
+                <div id="msc-details">
+                    <h3>Computer Science</h3>
+                    <p>Program : M.Sc</p>
+                    <p>Branch: Computer Science</p>
+                    <p>Annual Intake: 48</p>
+                    <p>Duration : 2 Years</p>
+                    <p>Affiliation : Madurai Kamaraj University(MKU)</p>
+                    <p>Scheme year: 2021</p>
+                    <p>Syllabus :  <a onclick="pgOn(),ugOff()" href="#">view</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="syllabus">
+            <div id="ug-overlay">
+            <div id="ug-syllabus">
+                <h2 id="ug-head">UG Syllabus</h2><hr id="ug-line"> 
+                <a onclick="ugOff()" href="#" class="close"></a>
+                <div id="ug-semester-list">
+                    <div id="sem-list"><a href="./image/ug-syllabus-sem1.pdf">1 semester</a></div>
+                    <div id="sem-list"><a href="./image/ug-syllabus-sem2.pdf">2 semester</a></div>
+                    <div id="sem-list"><a href="./image/ug-syllabus-sem3.pdf">3 semester</a></div>
+                    <div id="sem-list"><a href="./image/ug-syllabus-sem4.pdf">4 semester</a></div>
+                    <div id="sem-list"><a href="./image/ug-syllabus-sem5.pdf">5 semester</a></div>
+                    <div id="sem-list"><a href="./image/ug-syllabus-sem6.pdf">6 semester</a></div>
+                </div>
+            </div>
+            </div>
+            <div id="pg-overlay">   
+            <div id="pg-syllabus">
+                <h2 id="pg-head">PG Syllabus</h2><hr id="pg-line">
+                <a onclick="pgOff()" href="#" class="close"></a>
+                <div id="pg-semester-list">
+                    <div id="sem-list"><a href="#">1 semester</a></div>
+                    <div id="sem-list"><a href="#">2 semester</a></div>
+                    <div id="sem-list"><a href="#">3 semester</a></div>
+                    <div id="sem-list"><a href="#">4 semester</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <script src="./course.js"></script>
+</body>
+</html>

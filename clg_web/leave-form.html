@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave form</title>
+    <link rel="stylesheet" href="./leave-form.css">
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <section>
+        <div class="leave-form">
+            <div id="form-logo">
+                <img src="./image/AKCAS_logo.jpg" alt="">
+            </div>
+            <div id="head-leave">
+                <h1 class="text-center head-leave">DEPARTMENT OF COMPUTER SCIENCE <br>
+                    STUDENT LEAVE FORM</h1>
+            </div>
+            <form action="" method="get">
+            <div id="form-input">
+                <div id="input-name">
+                    <label for="name">Student Name :</label>
+                    <input type="text"  id="name" name="name" required>
+                </div><br><br>
+                <div id="reg-roll-no">
+                <div id="input-rollno">
+                    <label for="rollno">Roll.No:</label>
+                    <input type="text" id="rollno" name="rollno" required>
+                </div>
+                <div id="input-regno">
+                    <label for="regno">Reg.No:</label>
+                    <input type="text" id="regno" name="regno" required>
+                </div>
+            </div><br><br>
+            <div id="no-day-class">
+            <div id="input-class">
+                <label for="class">Class:</label>
+                <input type="text"  id="class" name="class" required>
+            </div>
+            <div id="input-no-day">
+                <label for="no-day">No. of days leave:</label>
+                <input type="number"  id="no-day" name="no-day" required>
+            </div>
+            </div><br><br>
+            <div id="input-date">
+               <div id="input-start-date">
+                <label for="start-date">From Date :</label>
+                <input type="date" id="start-date" name="start-date" required>
+               </div> 
+               <div id="input-end-date">
+                <label for="start-end">To Date :</label>
+                <input type="date" id="end-date" name="end-date">
+               </div> 
+            </div><br><br>
+            <div id="input-on-day">
+                <label for="on-day" required>Leave informed on :</label>
+                <input type="radio" name="onday" id="on-day">
+                <label id="on-day-text">Previous Day </label>
+                <input type="radio" name="onday" id="on-day">
+                <label id="on-day-text">On that day  </label>
+                <input type="radio" name="onday" id="on-day">
+                <label id="on-day-text">Next day</label>
+            </div><br><div id="input-on-day">
+                <label for="on-day" required>Leave Type :</label>
+                <input type="radio" name="onday1" id="on-day">
+                <label id="on-day-text">Half Day </label>
+                <input type="radio" name="onday1"  id="on-day">
+                <label id="on-day-text">Full Day </label>
+            </div><br>
+            <div id="input-purpose">
+                <label for="purpose">Purpose:</label><br>
+                <textarea name="purpose" id="purpose" cols="120" rows="5" required></textarea>
+            </div><br>
+            <div id="submit-reset">
+                <input type="submit" pattern="Submit" id="botton-submit">
+                <input type="reset" pattern="Reset" id="botton-reset">
+            </div>
+            </div>
+        </form>
+        </div>
+    </section>
+</body>
+</html>
