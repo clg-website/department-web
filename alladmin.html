@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bootstrap components/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="bg-success navbar navbar-expand-lg navbar-dark p-3">
+        <div class="container">
+            <img class="me-5"src="image/admin.png" alt="">
+            <div class="navbar-brand">PUBLIC TRANSPORT TIME TRACKING</div>
+            <button class="navbar-toggler">
+                <div class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#collapse"></div>
+            </button>
+            <div class="navbar-collapse collapse" id="collapse">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item me-5">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a href="admin.html" class="nav-link">ROUTE</a>
+                    </li> 
+                    <li class="nav-item me-5">
+                        <a href="search .html" class="nav-link">AD-ADMINE</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a href="alladmin.html" class="nav-link">ADMIN</a>
+                    </li>
+                </ul>
+               <!--  <button class="btn btn-primary mx-lg-5 mx-0 mt-lg-0 my-2">SIGNUP</button> -->
+            </div>
+        </div>
+    </nav>
+    <section class="p-5">
+        <div class="container">
+            <table class="table table-bordered text-center table-hover">
+                <thead class="bg-warning">
+                    <tr>
+                        <th>Id</td>
+                        <th>EMAIL</th>
+                        <th>ADIMN-NAME</th>
+                        <th>ADMIN-PASSWORD</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    
+                        $query = "SELECT * FROM table_name"; 
+                        $select_table = mysqli_query($connection, $query);
+                        while ($row = mysqli_fetch_assoc($select_table)) {
+
+                            $id = $row['id'];
+                            $email = $row['busroute'];
+                            $admin-name = $row['bustime'];
+                            $admin-pass = $row['bustype']; 
+
+                            echo "<tr>";
+                            echo "<td>$id</td>";
+                            echo "<td>$email</td>";
+                            echo "<td>$admin-name </td>";
+                            echo "<td>$admin-pass</td>";
+                            echo "<td><a href='admin.php?delete=1'>Delete</a></td>";
+                            echo "</tr>";
+                        
+                    ?>
+
+                    <?php 
+                    
+                        if (isset($_GET['delete'])) {
+
+                            $id = $_GET['delete'];
+
+                            $query = "DELETE table_name WHERE id = $id";
+                            $delete_bus = mysqli_query($connection, $query);
+                            if ($delete) {
+                                header("Location: ./admin.php");
+                            }
+
+                        }                   
+                    ?>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="./Bootstrap components/js/bootstrap.min.js"></script>
+</body>
+</html>

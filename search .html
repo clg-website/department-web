@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bootstrap components/css/bootstrap.min.css">
+    <style>
+        form{
+            height: 100vh;
+            background-image: url(image/forest.jpg);
+        }
+        button{
+            height: 40px;
+        }
+        .input{
+            width: 350px;
+        }
+        input{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class=" bg-success navbar navbar-expand-lg navbar-dark p-3">
+        <div class="container">
+            <img class="me-5"src="image/admin.png" alt="">
+            <div class="navbar-brand">PUBLIC TRANSPORT TIME TRACKING</div>
+            <button class="navbar-toggler">
+                <div class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#collapse"></div>
+            </button>
+            <div class="navbar-collapse collapse" id="collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">INFO</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SEARCH-BOX</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>  -->
+                </ul>
+                <button class="btn btn-primary mx-lg-5 mx-0 mt-lg-0 my-2">SIGNUP</button>
+            </div>
+        </div>
+    </nav>
+<form class="w-100  d-flex justify-content-center p-4 ">
+    
+    <div class="input mx-3">
+        <input class="form-control  " type="text" placeholder="FROM">
+    </div>
+    <div class="input mx-3">
+        <input class="form-control " type="text" placeholder="TO">
+    </div> 
+    
+    <button class=" btn btn-primary mx-lg-5 mx-0 mt-lg-0 my-2">SEARCH</button>
+</form>
+
+<script src="./Bootstrap components/js/bootstrap.min.js"></script>
+</body>
+</html>
